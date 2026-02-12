@@ -1,4 +1,5 @@
 def greet(name):
-    return print(f"Hello, {name}")
+    name = input("Please enter your name: ")
+    return print(f"Hello, {name}!")
 
-greet("Sid")
+greet("")

@@ -4,4 +4,5 @@ def o_e_checker(n)->bool:
     else:
         return False
 
-n = 9
+n = int(input("Enter number: "))
+print("Number is "+("Even" if o_e_checker(n) else "Odd"))
