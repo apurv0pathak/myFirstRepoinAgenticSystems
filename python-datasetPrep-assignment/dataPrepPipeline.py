@@ -2,20 +2,21 @@ import numpy as np
 
 np.random.seed(0)
 
-matrix = np.array([]) 
-
 #100 rows(samples), 3 columns(features)
 matrix = np.random.randn(100,3).round(2)
 
 #print("Dataset: \n", matrix)
+print("Data shape: ", matrix.shape)
 
 #mean per feature
-means = np.array([matrix[:,0].mean(), matrix[:,1].mean(), matrix[:,2].mean()])
+#means = np.array([matrix[:,0].mean(), matrix[:,1].mean(), matrix[:,2].mean()])
+means = matrix.mean(axis=0)
 print("Means of Features: ", means.round(2))
 print("Mean shape: ", means.shape)
 
 #standard deviation per feature
-stds = np.array([matrix[:,0].std(), matrix[:,1].std(), matrix[:,2].std()])
+#stds = np.array([matrix[:,0].std(), matrix[:,1].std(), matrix[:,2].std()])
+stds = matrix.std(axis=0)
 print("Standard Deviation of Features: ", stds.round(2))
 print("Standard Deviation shape: ", stds.shape)
 
