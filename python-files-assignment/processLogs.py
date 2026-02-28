@@ -10,7 +10,7 @@ print(f"Total Sum: {total}")
 print(f"Average : {avg}")
 
 with open("results.log", "a") as file:
-    file.write("File opened successfully")
+    file.write("\nFile opened successfully")
     file.write("\nData loaded : " + " ".join(f"{nos[i]}" for i in range(n)))
     file.write(f"\nTotal numbers: {total}")
     file.write(f"\nSum: {total} \nAverage = {avg}")
