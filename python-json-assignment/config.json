@@ -1,0 +1,12 @@
+{
+    "success": true,
+    "income": 4.2,
+    "age": 23
+}{
+    "id": "req_123",
+    "status": "success",
+    "result": {
+        "text": "Hello world",
+        "confidence": 0.98
+    }
+}
