@@ -11,5 +11,16 @@ print("\nlast 5 rows: \n",df.tail(5),"\n")
 df.info()
 
 #data summary
-print("\nsummary statistics of numerical columns: \n",df.describe())
+print("\nsummary statistics of numerical columns: \n",
+      df.describe())
 
+#storing a column in a variable
+cals = df["Calories"]
+#print(cals)
+
+#2 columns in a new dataframe
+pulseData = df[["Pulse", "Maxpulse"]]
+
+#filtering based on a numerical condition
+print("\npulse data of maxpulse higher than 130\n",pulseData[pulseData["Maxpulse"]>130])
+print("\ndata of maxpulse lower than 130\n",df[pulseData["Maxpulse"]<130])
