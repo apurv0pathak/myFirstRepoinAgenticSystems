@@ -22,8 +22,7 @@ result = {
         "income":4.2,
         "age":23
 }
-
-
+parsed["result"]["confidence"]-=0.02
 
 with open("response.json", "w") as fileHandler:
     json.dump(result, fileHandler)
