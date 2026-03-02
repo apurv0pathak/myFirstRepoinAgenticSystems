@@ -22,5 +22,5 @@ cals = df["Calories"]
 pulseData = df[["Pulse", "Maxpulse"]]
 
 #filtering based on a numerical condition
-print("\npulse data of maxpulse higher than 130\n",pulseData[pulseData["Maxpulse"]>130])
-print("\ndata of maxpulse lower than 130\n",df[pulseData["Maxpulse"]<130])
+print("\npulse data of maxpulse > 130\n",pulseData[pulseData["Maxpulse"]>130])
+print("\ndata of maxpulse < 130\n",df[pulseData["Maxpulse"]<130])
