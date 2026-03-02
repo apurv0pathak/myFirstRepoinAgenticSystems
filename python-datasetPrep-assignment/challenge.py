@@ -33,10 +33,14 @@ targets = targets[~rows]
 print("Cleaned up targets: ",targets.shape)
 
 #feature engg
+
+#fn for creating non repetitive random ints in a range 
 new_ft = np.random.choice(range(0,4), 2, replace=False)
-print(new_ft)
+#multiplying across 2 columns randomly selected (broadcasting multiplication)
 new_col = features[:,new_ft].prod(axis=1)
 print(new_col.shape)
 features = np.column_stack((features, new_col))
-print(features.shape)
-print(matrix.shape)
+print("features now: ", features.shape)
+
+#matrix = np.column_stack((features,targets)) 
+#print(matrix.shape)
